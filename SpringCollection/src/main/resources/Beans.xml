@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd"
+    default-init-method="initialize" default-destroy-method="destroy">
+
+    <!-- Definition for javaCollection -->
+    <bean id="javaCollection"
+        class="fan.stu.springcollection.JavaCollection">
+
+        <!-- list các giá trị này được gán cho addressList -->
+        <property name="addressList">
+            <list>
+                <value>Ha Noi</value>
+                <value>Vinh Phuc</value>
+                <value>Bac Ninh</value>
+            </list>
+        </property>
+
+        <!-- list các giá trị này được gán cho addressSet -->
+        <property name="addressSet">
+            <set>
+                <value>Ha Noi</value>
+                <value>Vinh Phuc</value>
+                <value>Bac Ninh</value>
+            </set>
+        </property>
+
+        <!-- list các giá trị này được gán cho addressMap -->
+        <property name="addressMap">
+            <map>
+                <entry key="1" value="Ha Noi" />
+                <entry key="2" value="Vinh Phuc" />
+                <entry key="3" value="Bac Ninh" />
+            </map>
+        </property>
+
+        <!-- list các giá trị này được gán cho addressProp -->
+        <property name="addressProp">
+            <props>
+                <prop key="one">Ha Noi</prop>
+                <prop key="one">Ha Noi</prop>
+                <prop key="two">Vinh Phuc</prop>
+                <prop key="three">Bac Ninh</prop>
+            </props>
+        </property>
+    </bean>
+
+</beans>
