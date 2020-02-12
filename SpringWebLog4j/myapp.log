@@ -1,44 +1,6 @@
-2020-02-12 21:44:31 FATAL MainController:15 - Log fatal
-2020-02-12 21:44:31 ERROR MainController:16 - Log error
-2020-02-12 21:44:31 WARN  MainController:17 - Log warn
-2020-02-12 21:44:31 DEBUG MainController:18 - Log debug
-2020-02-12 21:44:33 FATAL MainController:15 - Log fatal
-2020-02-12 21:44:33 ERROR MainController:16 - Log error
-2020-02-12 21:44:33 WARN  MainController:17 - Log warn
-2020-02-12 21:44:33 DEBUG MainController:18 - Log debug
-2020-02-12 21:44:33 FATAL MainController:15 - Log fatal
-2020-02-12 21:44:33 ERROR MainController:16 - Log error
-2020-02-12 21:44:33 WARN  MainController:17 - Log warn
-2020-02-12 21:44:33 DEBUG MainController:18 - Log debug
-2020-02-12 21:44:33 FATAL MainController:15 - Log fatal
-2020-02-12 21:44:33 ERROR MainController:16 - Log error
-2020-02-12 21:44:33 WARN  MainController:17 - Log warn
-2020-02-12 21:44:33 DEBUG MainController:18 - Log debug
-2020-02-12 21:44:33 FATAL MainController:15 - Log fatal
-2020-02-12 21:44:33 ERROR MainController:16 - Log error
-2020-02-12 21:44:33 WARN  MainController:17 - Log warn
-2020-02-12 21:44:33 DEBUG MainController:18 - Log debug
-2020-02-12 21:44:33 FATAL MainController:15 - Log fatal
-2020-02-12 21:44:33 ERROR MainController:16 - Log error
-2020-02-12 21:44:33 WARN  MainController:17 - Log warn
-2020-02-12 21:44:33 DEBUG MainController:18 - Log debug
-2020-02-12 21:44:57 FATAL MainController:15 - Log fatal
-2020-02-12 21:44:57 ERROR MainController:16 - Log error
-2020-02-12 21:44:57 WARN  MainController:17 - Log warn
-2020-02-12 21:44:57 DEBUG MainController:18 - Log debug
-2020-02-12 21:44:57 FATAL MainController:15 - Log fatal
-2020-02-12 21:44:57 ERROR MainController:16 - Log error
-2020-02-12 21:44:57 WARN  MainController:17 - Log warn
-2020-02-12 21:44:57 DEBUG MainController:18 - Log debug
-2020-02-12 21:44:57 FATAL MainController:15 - Log fatal
-2020-02-12 21:44:57 ERROR MainController:16 - Log error
-2020-02-12 21:44:57 WARN  MainController:17 - Log warn
-2020-02-12 21:44:57 DEBUG MainController:18 - Log debug
-2020-02-12 21:44:57 FATAL MainController:15 - Log fatal
-2020-02-12 21:44:57 ERROR MainController:16 - Log error
-2020-02-12 21:44:57 WARN  MainController:17 - Log warn
-2020-02-12 21:44:57 DEBUG MainController:18 - Log debug
-2020-02-12 21:44:58 FATAL MainController:15 - Log fatal
-2020-02-12 21:44:58 ERROR MainController:16 - Log error
-2020-02-12 21:44:58 WARN  MainController:17 - Log warn
-2020-02-12 21:44:58 DEBUG MainController:18 - Log debug
+2020-02-12 23:45:22 INFO  MainController:14 - Log info
+2020-02-12 23:45:53 INFO  LoggerAspectJ:18 - Start method index
+2020-02-12 23:45:53 INFO  MainController:14 - Log info
+2020-02-12 23:45:53 INFO  LoggerAspectJ:23 - Finish method index
+2020-02-12 23:45:53 INFO  LoggerAspectJ:28 - After returning index
+2020-02-12 23:45:53 INFO  LoggerAspectJ:29 - Return value index

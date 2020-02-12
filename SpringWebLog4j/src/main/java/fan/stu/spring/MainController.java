@@ -9,14 +9,14 @@ public class MainController {
 
     private static final Logger logger = Logger.getLogger(MainController.class);
 
-    @RequestMapping(value = {"/", "/index"})
+    @RequestMapping("/")
     public String index() {
-
-        logger.fatal("Log fatal");
-        logger.error("Log error");
-        logger.warn("Log warn");
-        logger.debug("Log debug");
-
+        logger.info("Log info");
         return "index";
+    }
+
+    @RequestMapping("/error")
+    public String error() throws Exception {
+        throw new Exception("testing");
     }
 }

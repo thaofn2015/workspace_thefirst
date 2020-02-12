@@ -12,5 +12,6 @@
 
     <body>
         <h1>Test log4j</h1>
+        <a href="error">Test Log</a>
     </body>
 </html>
