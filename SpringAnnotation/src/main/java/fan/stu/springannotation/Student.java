@@ -1,7 +1,6 @@
 package fan.stu.springannotation;
 
 import org.springframework.beans.factory.annotation.Required;
-import org.springframework.objenesis.instantiator.annotations.Instantiator;
 
 public class Student {
 
