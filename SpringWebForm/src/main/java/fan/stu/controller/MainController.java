@@ -33,6 +33,7 @@ public class MainController {
         ModelAndView mav = new ModelAndView();
         mav.addObject("newName", newName);
         mav.setViewName("view-name");
+
         return mav;
     }
 }
