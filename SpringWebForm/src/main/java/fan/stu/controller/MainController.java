@@ -19,9 +19,9 @@ public class MainController {
 
     @RequestMapping(value = "/convert-name", method = RequestMethod.GET)
     public String convertName(Model model) {
-        
+
         model.addAttribute("user", new User());
-        
+
         return "input-name";
     }
 
