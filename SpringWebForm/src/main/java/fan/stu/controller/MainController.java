@@ -5,6 +5,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.ModelAndView;
 
 import fan.stu.entity.User;
 
@@ -25,11 +26,14 @@ public class MainController {
     }
 
     @RequestMapping(value = "/convert-name", method = RequestMethod.POST)
-    public String convertName(@ModelAttribute("user") User user) {
+    public ModelAndView convertName(@ModelAttribute("user") User user) {
         String oldName = user.getUserName();
         String newName = oldName.toUpperCase();
 
+        ModelAndView mav = new ModelAndView();
+        mav.addObject("newName", newName);
+        mav.setViewName("view-name");
 
-        return "view-name";
+        return mav;
     }
 }
