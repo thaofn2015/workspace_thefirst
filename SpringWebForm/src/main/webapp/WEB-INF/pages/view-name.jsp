@@ -15,6 +15,6 @@
         <a href="index">Index</a>
         </br>
         <a href="convert-name">Convert Name</a>
-        <p>Converted Name: ${user.userName}</p>
+        <p>Converted Name: ${newName}</p>
     </body>
 </html>
