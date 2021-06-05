@@ -1,6 +1,0 @@
-2020-02-12 23:45:22 INFO  MainController:14 - Log info
-2020-02-12 23:45:53 INFO  LoggerAspectJ:18 - Start method index
-2020-02-12 23:45:53 INFO  MainController:14 - Log info
-2020-02-12 23:45:53 INFO  LoggerAspectJ:23 - Finish method index
-2020-02-12 23:45:53 INFO  LoggerAspectJ:28 - After returning index
-2020-02-12 23:45:53 INFO  LoggerAspectJ:29 - Return value index
