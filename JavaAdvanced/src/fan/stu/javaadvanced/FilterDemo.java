@@ -28,6 +28,9 @@ public class FilterDemo {
         });
         
         steam.forEach(e -> System.out.println(e));
+
+        // stream has already been operated upon or closed
+        // System.out.println(steam.count());
     }
     
     private static void filter8(List<Integer> list) {
