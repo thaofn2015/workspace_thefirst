@@ -1,17 +1,14 @@
 package fan.stu.javaadvanced;
 
-import java.security.cert.CollectionCertStoreParameters;
 import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
 
 public class MethodReferencesDemo {
     public static void main(String[] args) {
         MethodReferencesDemo demo = new MethodReferencesDemo();
 
-        // demo.withStatciMethod();
+        demo.withStatciMethod();
 
-        // demo.instanceMethod();
+        demo.instanceMethod();
 
         demo.withConstructor();
 
@@ -48,7 +45,7 @@ public class MethodReferencesDemo {
         System.out.println(toDo(1, 22, mathUtil::add));
 
         String[] stringArray = { "Java", "C++", "PHP", "C#", "Javascript" };
-        // Arrays.sort(stringArray, String::compareToIgnoreCase);
+        Arrays.sort(stringArray, String::compareToIgnoreCase);
         Arrays.sort(stringArray, (a, b) -> a.compareToIgnoreCase(b));
         System.out.println(Arrays.asList(stringArray));
     }
