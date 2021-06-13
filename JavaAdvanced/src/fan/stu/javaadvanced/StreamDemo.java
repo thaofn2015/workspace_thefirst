@@ -17,29 +17,29 @@ import java.util.stream.Stream;
 public class StreamDemo {
 
     public static void main(String[] args) {
-        // countEvenNumber();
+        countEvenNumber();
 
-        // primitiveStream();
+        primitiveStream();
 
-        // convertToStream();
+        convertToStream();
 
-        // convertFromStream();
+        convertFromStream();
 
-        // filterAndLimit();
+        filterAndLimit();
 
-        // limitAndSkip();
+        limitAndSkip();
 
-        // map();
+        map();
 
-        // sort();
+        sort();
 
-        // match();
+        match();
 
-        // minMax();
+        minMax();
 
-        // summaryStatistics();
+        summaryStatistics();
 
-        // reduce();
+        reduce();
 
         parallelStream();
 
