@@ -28,4 +28,9 @@
     Sử dụng trong filter
 
 7. ConsumerDemo.java (Supplier tương tự)
-    Sử ụng trong forEach
+    Sử dụng trong forEach
+
+8. FunctionDemo.java
+    Sử dụng để tạo hàm chuyển rồi object to object
+
+9. 
