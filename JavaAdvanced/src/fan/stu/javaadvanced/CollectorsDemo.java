@@ -1,9 +1,11 @@
 package fan.stu.javaadvanced;
 
 import java.util.Arrays;
+import java.util.DoubleSummaryStatistics;
 import java.util.LinkedHashMap;
 import java.util.LinkedList;
 import java.util.Map;
+import java.util.Set;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -25,6 +27,70 @@ public class CollectorsDemo {
 
         // Steam to Map: Collectors.toMap()
         mapDemo();
+
+        // Collectors.collectingAndThen()
+        Stream<String> streamCollectingAndThen = Arrays.asList("Thao", "Phan", "Thao").stream();
+        System.out.println(streamCollectingAndThen.collect(Collectors.collectingAndThen(Collectors.toList(), x -> x.subList(1, 3))));
+
+        // Collectors.joining()
+        Stream<String> streamJoining = Arrays.asList("Thao", "Phan", "Thao").stream();
+        System.out.println(streamJoining.collect(Collectors.joining(" - ", "[START]", "[END]")));
+
+        // Collectors.counting()
+        Stream<String> streamCounting = Arrays.asList("Thao", "Phan", "Thao").stream();
+        System.out.println(streamCounting.collect(Collectors.counting()));
+
+        // Collectors.summarizing
+        Stream<String> streamSummarizing = Arrays.asList("Thao", "Phan", "Thao").stream();
+        DoubleSummaryStatistics intSummaryStatistics = streamSummarizing.collect(Collectors.summarizingDouble(String::length));
+        System.out.println(intSummaryStatistics);
+
+        // Collectors.averagingDouble/Long/Int()
+
+        // Collectors.summingDouble/Long/Int()
+
+        // Collectors.maxBy()/ Collectors.minBy()
+        Stream<String> streamMin = Arrays.asList("Thao1", "Phan22", "Thao").stream();
+        System.out.println(streamMin.collect(Collectors.minBy((x, y) -> x.length() - y.length())));
+
+        // Collectors.groupingBy()
+        groupingByDemo();
+
+        // Collectors.partitioningBy()
+        partitioningByDemo();
+
+        // Collectors.reducing()
+        
+    }
+
+    private static void partitioningByDemo() {
+        Stream<Student> streamStudents = Arrays.asList(
+            new Student("A", 70),
+            new Student("B", 80),
+            new Student("C", 75),
+            new Student("D", 75),
+            new Student("E", 75),
+            new Student("F", 75),
+            new Student("G", 75),
+            new Student("H", 100)).stream();
+
+        Map<Boolean, Set<Student>> map = streamStudents.collect(Collectors.partitioningBy(s -> s.getAge() > 77, Collectors.toSet()));
+        map.forEach((key, value) -> System.out.println(key + ": " + value));
+    }
+
+    private static void groupingByDemo() {
+        Stream<Student> streamStudents = Arrays.asList(
+                new Student("A", 70),
+                new Student("B", 80),
+                new Student("C", 75),
+                new Student("D", 75),
+                new Student("E", 75),
+                new Student("F", 75),
+                new Student("G", 75),
+                new Student("H", 100)).stream();
+
+        Map<Integer, Set<Student>> map = streamStudents.collect(Collectors.groupingBy(Student::getAge, Collectors.toSet()));
+        map.forEach((key, value) -> System.out.println("Age: " + key + " - Number of Student: " + value.size()));
     }
 
     private static void mapDemo() {

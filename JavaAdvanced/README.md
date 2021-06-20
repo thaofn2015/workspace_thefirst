@@ -34,3 +34,6 @@
     Sử dụng để tạo hàm chuyển rồi object to object
 
 9. CollectorsDemo.java
+    Convert stream thành List, Set, Map
+    Sử dụng collectingAndThen, joining, couting, summarizing, groupingby, partitioningBy, reducing
+    Custom Collectors
