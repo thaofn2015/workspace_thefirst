@@ -2,8 +2,11 @@ package fan.study.patterns.behavioral.strategy;
 
 import java.util.List;
 
+/*
+ * https://gpcoder.com/4796-huong-dan-java-design-pattern-strategy/ 
+ */
 public class StrategyPatternExample {
-	
+
 	public static void main(String[] args) {
 		SortedList sort = new SortedList();
 		sort.setItems(List.of("Thao", "Phan"));
