@@ -1,5 +1,9 @@
 package fan.study.patterns.behavioral.command.b;
 
+/**
+ * https://gpcoder.com/4686-huong-dan-java-design-pattern-command/ 
+ *
+ */
 public class Main {
 
 	public static void main(String[] args) {
